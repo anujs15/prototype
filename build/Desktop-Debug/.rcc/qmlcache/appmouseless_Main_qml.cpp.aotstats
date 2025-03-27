@@ -6,322 +6,386 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 27,
-                        "durationMicroseconds": 6208,
+                        "durationMicroseconds": 5544,
                         "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
                         "functionName": "dataset",
-                        "line": 188
+                        "line": 746
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 30,
+                        "durationMicroseconds": 80,
+                        "errorMessage": "",
+                        "functionName": "activeKeys",
+                        "line": 762
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 33,
-                        "durationMicroseconds": 261,
+                        "column": 36,
+                        "durationMicroseconds": 108,
+                        "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
+                        "functionName": "expectedSequence",
+                        "line": 763
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 29,
+                        "durationMicroseconds": 102,
                         "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
                         "functionName": "keyColors",
-                        "line": 204
+                        "line": 765
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 9,
-                        "durationMicroseconds": 1317,
+                        "column": 5,
+                        "durationMicroseconds": 1157,
                         "errorMessage": "Cannot generate efficient code for LoadElement with non-list base type (component in /home/anujs/mouseless/Main.qml)::dataset with type QVariant (stored as QJSValue)",
-                        "functionName": "resetKeyColors",
-                        "line": 212
+                        "functionName": "resetSequence",
+                        "line": 777
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 5,
+                        "durationMicroseconds": 1,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "checkKeyPress",
+                        "line": 784
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 5,
+                        "durationMicroseconds": 67,
+                        "errorMessage": "Cannot load property length from (component in /home/anujs/mouseless/Main.qml)::dataset with type QVariant.",
+                        "functionName": "advanceShortcut",
+                        "line": 970
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 5,
+                        "durationMicroseconds": 1,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "showResult",
+                        "line": 976
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 32,
-                        "durationMicroseconds": 262,
+                        "column": 28,
+                        "durationMicroseconds": 236,
                         "errorMessage": "",
                         "functionName": "onCompleted",
-                        "line": 207
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 13,
-                        "durationMicroseconds": 1,
-                        "errorMessage": "Functions without type annotations won't be compiled",
-                        "functionName": "checkModifier",
-                        "line": 251
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 13,
-                        "durationMicroseconds": 1,
-                        "errorMessage": "Functions without type annotations won't be compiled",
-                        "functionName": "processKeyResult",
-                        "line": 260
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 27,
-                        "durationMicroseconds": 132,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 220
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 30,
-                        "durationMicroseconds": 365,
-                        "errorMessage": "Cannot access value for name dataset",
-                        "functionName": "onPressed",
-                        "line": 224
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 30,
-                        "durationMicroseconds": 92,
-                        "errorMessage": "",
-                        "functionName": "onPressed",
-                        "line": 224
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 30,
-                        "durationMicroseconds": 51,
-                        "errorMessage": "Cannot access value for name currentIndex",
-                        "functionName": "onTriggered",
-                        "line": 279
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 15,
-                        "durationMicroseconds": 162,
-                        "errorMessage": "",
-                        "functionName": "width",
-                        "line": 292
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 16,
-                        "durationMicroseconds": 141,
-                        "errorMessage": "",
-                        "functionName": "height",
-                        "line": 293
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 36,
-                        "durationMicroseconds": 206,
-                        "errorMessage": "",
-                        "functionName": "horizontalCenter",
-                        "line": 295
+                        "line": 772
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 188,
+                        "durationMicroseconds": 102,
                         "errorMessage": "",
-                        "functionName": "top",
-                        "line": 296
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 29,
-                        "durationMicroseconds": 248,
-                        "errorMessage": "",
-                        "functionName": "topMargin",
-                        "line": 297
+                        "functionName": "fill",
+                        "line": 805
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 19,
-                        "durationMicroseconds": 67,
-                        "errorMessage": "Cannot access value for name dataset",
-                        "functionName": "text",
-                        "line": 302
+                        "column": 25,
+                        "durationMicroseconds": 262,
+                        "errorMessage": "Cannot access value for name event",
+                        "functionName": "onPressed",
+                        "line": 810
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 26,
+                        "durationMicroseconds": 74,
+                        "errorMessage": "Cannot access value for name activeKeys",
+                        "functionName": "onReleased",
+                        "line": 832
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 39,
-                        "durationMicroseconds": 202,
+                        "column": 20,
+                        "durationMicroseconds": 176,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 856
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 21,
+                        "durationMicroseconds": 136,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 857
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 35,
+                        "durationMicroseconds": 198,
                         "errorMessage": "",
                         "functionName": "horizontalCenter",
-                        "line": 305
+                        "line": 860
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 40,
-                        "durationMicroseconds": 197,
-                        "errorMessage": "",
-                        "functionName": "horizontalCenter",
-                        "line": 313
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 27,
+                        "column": 22,
                         "durationMicroseconds": 184,
                         "errorMessage": "",
                         "functionName": "top",
-                        "line": 314
+                        "line": 861
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 28,
+                        "durationMicroseconds": 235,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 862
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 24,
-                        "durationMicroseconds": 49,
+                        "column": 23,
+                        "durationMicroseconds": 54,
                         "errorMessage": "Cannot access value for name dataset",
-                        "functionName": "model",
-                        "line": 319
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 28,
-                        "durationMicroseconds": 81,
-                        "errorMessage": "Cannot access value for name keyColors",
-                        "functionName": "width",
-                        "line": 323
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 29,
-                        "durationMicroseconds": 53,
-                        "errorMessage": "Cannot access value for name keyColors",
-                        "functionName": "height",
-                        "line": 324
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 28,
-                        "durationMicroseconds": 50,
-                        "errorMessage": "Cannot access value for name keyColors",
-                        "functionName": "color",
-                        "line": 326
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 35,
-                        "durationMicroseconds": 53,
-                        "errorMessage": "Cannot access value for name keyColors",
-                        "functionName": "color",
-                        "line": 327
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 31,
-                        "durationMicroseconds": 58,
-                        "errorMessage": "Cannot access value for name keyColors",
-                        "functionName": "color",
-                        "line": 334
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 31,
-                        "durationMicroseconds": 449,
-                        "errorMessage": "Cannot access value for name modelData",
                         "functionName": "text",
-                        "line": 335
+                        "line": 867
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 137,
+                        "durationMicroseconds": 197,
                         "errorMessage": "",
-                        "functionName": "centerIn",
-                        "line": 332
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 34,
-                        "durationMicroseconds": 72,
-                        "errorMessage": "Cannot access value for name keyColors",
-                        "functionName": "visible",
-                        "line": 341
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 30,
-                        "durationMicroseconds": 49,
-                        "errorMessage": "Cannot access value for name keyColors",
-                        "functionName": "color",
-                        "line": 353
+                        "functionName": "horizontalCenter",
+                        "line": 870
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 35,
-                        "durationMicroseconds": 213,
+                        "column": 39,
+                        "durationMicroseconds": 189,
                         "errorMessage": "",
-                        "functionName": "right",
-                        "line": 343
+                        "functionName": "horizontalCenter",
+                        "line": 877
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 33,
-                        "durationMicroseconds": 185,
+                        "column": 26,
+                        "durationMicroseconds": 178,
                         "errorMessage": "",
                         "functionName": "top",
-                        "line": 344
+                        "line": 878
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 37,
-                        "durationMicroseconds": 73,
+                        "column": 28,
+                        "durationMicroseconds": 46,
+                        "errorMessage": "Cannot access value for name dataset",
+                        "functionName": "model",
+                        "line": 883
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 32,
+                        "durationMicroseconds": 62,
                         "errorMessage": "Cannot access value for name keyColors",
-                        "functionName": "source",
-                        "line": 358
+                        "functionName": "width",
+                        "line": 886
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 33,
+                        "durationMicroseconds": 52,
+                        "errorMessage": "Cannot access value for name keyColors",
+                        "functionName": "height",
+                        "line": 887
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 32,
+                        "durationMicroseconds": 50,
+                        "errorMessage": "Cannot access value for name keyColors",
+                        "functionName": "color",
+                        "line": 888
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 39,
+                        "durationMicroseconds": 53,
+                        "errorMessage": "Cannot access value for name keyColors",
+                        "functionName": "color",
+                        "line": 889
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 36,
+                        "durationMicroseconds": 57,
+                        "errorMessage": "Cannot access value for name keyColors",
+                        "functionName": "color",
+                        "line": 896
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 35,
+                        "durationMicroseconds": 378,
+                        "errorMessage": "Cannot access value for name modelData",
+                        "functionName": "text",
+                        "line": 897
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 37,
-                        "durationMicroseconds": 261,
+                        "column": 47,
+                        "durationMicroseconds": 105,
                         "errorMessage": "",
-                        "functionName": "width",
-                        "line": 359
+                        "functionName": "centerIn",
+                        "line": 894
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 38,
+                        "durationMicroseconds": 66,
+                        "errorMessage": "Cannot access value for name keyColors",
+                        "functionName": "visible",
+                        "line": 901
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 36,
+                        "durationMicroseconds": 57,
+                        "errorMessage": "Cannot access value for name keyColors",
+                        "functionName": "color",
+                        "line": 911
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 40,
+                        "durationMicroseconds": 201,
+                        "errorMessage": "",
+                        "functionName": "right",
+                        "line": 903
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 38,
-                        "durationMicroseconds": 231,
+                        "durationMicroseconds": 184,
                         "errorMessage": "",
-                        "functionName": "height",
-                        "line": 360
+                        "functionName": "top",
+                        "line": 904
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 41,
+                        "durationMicroseconds": 68,
+                        "errorMessage": "Cannot access value for name keyColors",
+                        "functionName": "source",
+                        "line": 916
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 46,
-                        "durationMicroseconds": 97,
+                        "column": 40,
+                        "durationMicroseconds": 240,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 917
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 41,
+                        "durationMicroseconds": 229,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 918
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 51,
+                        "durationMicroseconds": 93,
                         "errorMessage": "",
                         "functionName": "centerIn",
-                        "line": 357
+                        "line": 915
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 28,
+                        "durationMicroseconds": 213,
+                        "errorMessage": "",
+                        "functionName": "right",
+                        "line": 931
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 188,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 932
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 231,
+                        "errorMessage": "",
+                        "functionName": "topMargin",
+                        "line": 933
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 34,
+                        "durationMicroseconds": 223,
+                        "errorMessage": "",
+                        "functionName": "rightMargin",
+                        "line": 934
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 24,
+                        "column": 28,
                         "durationMicroseconds": 1,
                         "errorMessage": "Cannot resolve property type  for binding on onClicked.",
                         "functionName": "onClicked",
-                        "line": 379
+                        "line": 949
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 29,
-                        "durationMicroseconds": 1,
+                        "column": 28,
+                        "durationMicroseconds": 18,
                         "errorMessage": "Cannot resolve property type  for binding on right.",
                         "functionName": "right",
-                        "line": 373
+                        "line": 943
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 27,
+                        "column": 26,
                         "durationMicroseconds": 1,
                         "errorMessage": "Cannot resolve property type  for binding on top.",
                         "functionName": "top",
-                        "line": 374
+                        "line": 944
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 33,
+                        "column": 32,
                         "durationMicroseconds": 1,
                         "errorMessage": "Cannot resolve property type  for binding on topMargin.",
                         "functionName": "topMargin",
-                        "line": 375
+                        "line": 945
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 35,
+                        "column": 34,
                         "durationMicroseconds": 1,
                         "errorMessage": "Cannot resolve property type  for binding on rightMargin.",
                         "functionName": "rightMargin",
-                        "line": 376
+                        "line": 946
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 22,
+                        "durationMicroseconds": 113,
+                        "errorMessage": "method advanceShortcut cannot be resolved.",
+                        "functionName": "onTriggered",
+                        "line": 961
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 214,
+                        "errorMessage": "",
+                        "functionName": "onTriggered",
+                        "line": 967
                     }
                 ],
                 "filepath": "/home/anujs/mouseless/Main.qml"
