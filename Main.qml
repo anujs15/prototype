@@ -11,7 +11,6 @@ ApplicationWindow {
     color: "black"
 
     property var dataset: [
-        {key: ["Ctrl", "C"], description: "Copy selected text"},
         {key: ["Ctrl", "Shift", "N"], description: "New private window"},
         {key: ["Ctrl", "V"], description: "Paste"},
         {key: ["Ctrl", "Z"], description: "Undo"},
@@ -30,11 +29,9 @@ ApplicationWindow {
     property var expectedSequence: []
     property int currentStep: 0
     property var keyColors: []
+    property bool allkeys:true
+    property int count:1
 
-    // UI properties
-    property color baseColor: "#404040"
-    property color successColor: "#2ecc71"
-    property color errorColor: "#e74c3c"
 
     Component.onCompleted: {
         resetSequence()
@@ -42,6 +39,7 @@ ApplicationWindow {
     }
 
     function resetSequence() {
+        allkeys=true
         currentStep = 0
         activeKeys = {}
         keyColors = new Array(dataset[currentIndex].key.length).fill("white")
@@ -87,7 +85,7 @@ ApplicationWindow {
                 currentStep++
 
                 if (currentStep === expectedSequence.length) {
-                    showResult(true)
+                    showResult(allkeys)
                     nextShortcutTimer.start()
                 }
 
@@ -100,8 +98,9 @@ ApplicationWindow {
                         newColors[currentStep] = "red"
                         keyColors=newColors
                         currentStep++
+                        allkeys=false
                      if (currentStep === expectedSequence.length) {
-                          showResult(false)
+                          showResult(allkeys)
                         }
 
                  }
@@ -130,6 +129,31 @@ ApplicationWindow {
                    resetSequence()
                 }
         }
+
+
+              // count store
+
+              Rectangle{
+                        id:countstore
+                        height:50
+                        width: 50
+                        color:"black"
+
+                        anchors{
+                            right: parent.right
+                            top:parent.top
+                            rightMargin: 40
+                            topMargin: 40
+                        }
+
+                        Text {
+                            id: text
+                            font.pointSize: 18
+                            anchors.centerIn: parent
+                            text:  `${count}/${dataset.length}`
+                            color: "white"
+                        }
+              }
 
         Column {
 
@@ -219,15 +243,15 @@ ApplicationWindow {
                 anchors{
                     right:parent.right
                     top:parent.top
-                    topMargin: parent.height/2
-                    rightMargin: parent.width/2
+                    topMargin: (parent.height/4)
+                    rightMargin: (parent.width/2)
                 }
                 opacity: 0
                 Behavior on opacity { NumberAnimation { duration: 200 } }
             }
 
             Button {
-                text: "Skip Shortcut"
+                text: "Skip"
                 anchors{
                     right:parent.right
                     top:parent.top
@@ -235,10 +259,13 @@ ApplicationWindow {
                     rightMargin: parent.width/4
                 }
 
+                height: 50
+                width:70
+
                 onClicked: advanceShortcut()
                 background: Rectangle {
                     color: "#2980b9"
-                    radius: 5
+                    radius: 20
                 }
             }
         }
@@ -258,6 +285,7 @@ ApplicationWindow {
 
     function advanceShortcut() {
         currentIndex = (currentIndex + 1) % dataset.length
+      count=(((count + 1) % (dataset.length+1))==0)?1:count+1
         resetSequence()
         resultDisplay.opacity = 0
     }
