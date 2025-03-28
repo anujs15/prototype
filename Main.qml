@@ -732,6 +732,14 @@
 //     }
 // }
 
+// var newColors=keyColors.slice()
+// newColors[currentStep] = "green"
+// keyColors=newColors
+
+
+
+
+
 import QtQuick 2.15
 import QtQuick.Controls 2.15
 
@@ -759,7 +767,7 @@ ApplicationWindow {
     ]
 
     property int currentIndex: 0
-    property var activeKeys: {}
+    property var activeKeys: ({})
     property var expectedSequence: []
     property int currentStep: 0
     property var keyColors: []
@@ -793,8 +801,7 @@ ApplicationWindow {
         } else if (currentKey === "Alt") {
             keyMatch = event.modifiers & Qt.AltModifier
         } else {
-            let keyCode = Qt["Key_" + currentKey.toUpperCase()];
-            keyMatch = event.key === keyCode;
+            keyMatch = event.key === currentKey.charCodeAt(0)
         }
 
         return keyMatch && !activeKeys[currentKey]
@@ -814,7 +821,9 @@ ApplicationWindow {
             const currentKey = expectedSequence[currentStep]
             if (checkKeyPress(event)) {
                 activeKeys[currentKey] = true
-                keyColors[currentStep] = "green"
+                var newColors=keyColors.slice()
+                newColors[currentStep] = "green"
+                keyColors=newColors
                 currentStep++
 
                 if (currentStep === expectedSequence.length) {
@@ -822,48 +831,45 @@ ApplicationWindow {
                     nextShortcutTimer.start()
                 }
                 event.accepted = true
-            } else {
-                keyColors[currentStep] = "red"
-                showResult(false)
-                event.accepted = true
+            } else if (!Object.values(activeKeys).includes(true)) {
+                 newColors=keyColors.slice()
+                newColors[currentStep] = "red"
+                keyColors=newColors
+                  currentStep++
             }
         }
 
         Keys.onReleased: {
-            const releasedKey = Object.keys(activeKeys).find((key) => {
-                let keyCode;
-                if (key === "Ctrl") {
-                    return !(event.modifiers & Qt.ControlModifier);
-                } else if (key === "Shift") {
-                    return !(event.modifiers & Qt.ShiftModifier);
-                }
-                else if (key === "Alt") {
-                    return !(event.modifiers & Qt.AltModifier);
-                }
-                else {
-                    keyCode = Qt["Key_" + key.toUpperCase()];
-                    return event.key === keyCode;
-                }
-            });
+            const releasedKey = Object.keys(activeKeys).find(key =>
+                (key === "Ctrl" && !(event.modifiers & Qt.ControlModifier)) ||
+                (key === "Shift" && !(event.modifiers & Qt.ShiftModifier)) ||
+                (key === "Alt" && !(event.modifiers & Qt.AltModifier)) ||
+                (event.key === key.charCodeAt(0))
+            )
 
             if (releasedKey) {
                 delete activeKeys[releasedKey]
+                if (currentStep > 0) {
+                    currentStep = 0
+                    resetSequence()
+                }
             }
         }
 
         Column {
-            id: main
-            width: parent.width
-            height: parent.height
-            spacing: 40
-            anchors {
-                horizontalCenter: parent.horizontalCenter
-                top: parent.top
-                topMargin: parent.height / 3
-            }
+
+             id:main
+             width:parent.width
+             height: parent.height
+             spacing: 40
+             anchors{
+                 horizontalCenter: parent.horizontalCenter
+                 top: parent.top
+                 topMargin: parent.height/3
+             }
 
             Text {
-                id: keydes
+                id:keydes
                 text: dataset[currentIndex].description
                 color: "white"
                 font { pixelSize: 32; bold: true }
@@ -873,51 +879,59 @@ ApplicationWindow {
 
             Row {
                 spacing: 30
-                anchors {
-                    horizontalCenter: keydes.horizontalCenter
-                    top: keydes.top
-                    topMargin: 100
-                }
+                anchors{
+                         horizontalCenter: keydes.horizontalCenter
+                         top: keydes.top
+                         topMargin: 100
+                       }
 
                 Repeater {
-                    model: dataset[currentIndex].key
-                    delegate: Rectangle {
-                        id: keyrect
-                        width: keyColors[index] === "green" ? 70 : keyColors[index] === "red" ? 70 : 60
-                        height: keyColors[index] === "green" ? 50 : keyColors[index] === "red" ? 50 : 40
-                        color: keyColors[index] === "green" ? "white" : keyColors[index] === "red" ? "white" : "black"
-                        border.color: keyColors[index] === "green" ? "white" : keyColors[index] === "red" ? "white" : "gray"
-                        border.width: 2
-                        radius: 10
+                                   model: dataset[currentIndex].key
+                                   delegate: Rectangle {
+                                       id:keyrect
 
-                        Text {
-                            anchors.centerIn: parent
-                            font.pointSize: 14
-                            color: keyColors[index] === "green" ? "darkblack" : keyColors[index] === "red" ? "darkblack" : "gray"
-                            text: modelData
+                                       width: keyColors[index] === "green" ? 70 : keyColors[index] === "red" ? 70 : 60
+                                       height: keyColors[index] === "green" ? 50 : keyColors[index] === "red" ? 50 : 40
+
+                                       color: keyColors[index] === "green" ? "white" : keyColors[index] === "red" ? "white" : "black"
+                                       border.color: keyColors[index] === "green" ? "white" : keyColors[index] === "red" ? "white" : "gray"
+                                       border.width: 2
+                                       radius: 10
+
+                                       Text {
+                                           anchors.centerIn: parent
+                                           font.pointSize: 14
+                                           color:keyColors[index] === "green" ? "darkblack" : keyColors[index] === "red" ? "darkblack" : "gray"
+                                           text: modelData
+                                       }
+
+                                       // CheckBoxcircle
+
+                                       Rectangle{
+                                            visible:keyColors[index] === "green" ? true : keyColors[index] === "red" ? true : false
+                                          anchors{
+                                              right: parent.right
+                                              top: parent.top
+                                               rightMargin: -5
+                                               topMargin: -5
+                                          }
+
+                                          width:18
+                                          height:18
+                                          radius: 9
+
+                                          color:keyColors[index] === "green" ? "green" : keyColors[index] === "red" ? "red" : "black"
+
+                                          Image {
+                                              id: myimage
+                                              anchors.centerIn: parent ?
+                                                source:keyColors[index] === "green" ? "qrc:/images/right.png" : keyColors[index] === "red"?"qrc:/images/wrong.png":"none"
+                                                width: parent.width/2
+                                                height: parent.height/2
+                                              }
+
                         }
 
-                        Rectangle {
-                            visible: keyColors[index] === "green" || keyColors[index] === "red"
-                            anchors {
-                                right: parent.right
-                                top: parent.top
-                                rightMargin: -5
-                                topMargin: -5
-                            }
-                            width: 18
-                            height: 18
-                            radius: 9
-                            color: keyColors[index] === "green" ? "green" : keyColors[index] === "red" ? "red" : "black"
-
-                            Image {
-                                id: myimage
-                                anchors.centerIn: parent
-                                source: keyColors[index] === "green" ? "qrc:/images/right.png" : keyColors[index] === "red" ? "qrc:/images/wrong.png" : ""
-                                width: parent.width / 2
-                                height: parent.height / 2
-                            }
-                        }
                     }
                 }
             }
@@ -927,11 +941,11 @@ ApplicationWindow {
                 text: ""
                 color: "white"
                 font.pixelSize: 24
-                anchors {
-                    right: parent.right
-                    top: parent.top
-                    topMargin: parent.height / 2
-                    rightMargin: parent.width / 2
+                anchors{
+                    right:parent.right
+                    top:parent.top
+                    topMargin: parent.height/2
+                    rightMargin: parent.width/2
                 }
                 opacity: 0
                 Behavior on opacity { NumberAnimation { duration: 200 } }
@@ -939,11 +953,11 @@ ApplicationWindow {
 
             Button {
                 text: "Skip Shortcut"
-                anchors {
-                    right: parent.right
-                    top: parent.top
-                    topMargin: parent.height / 2
-                    rightMargin: parent.width / 4
+                anchors{
+                    right:parent.right
+                    top:parent.top
+                    topMargin: parent.height/2
+                    rightMargin: parent.width/4
                 }
 
                 onClicked: advanceShortcut()
