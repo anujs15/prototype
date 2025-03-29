@@ -1,0 +1,196 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-1d27c54a36a1e42df881.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "mouseless",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_aotstats::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_aotstats-Debug-99b8c38e12dc9e666423.json",
+					"name" : "all_aotstats",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-56d647f2b4520b5352a5.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-6cced1bb41f8e373f520.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-Debug-7418fd3839ae693cbb3d.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-bc36284575ba86a3e3f8.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appmouseless::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appmouseless-Debug-db363d1b7eeef356b1d3.json",
+					"name" : "appmouseless",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appmouseless_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appmouseless_autogen-Debug-26fced64c0520336feab.json",
+					"name" : "appmouseless_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appmouseless_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appmouseless_autogen_timestamp_deps-Debug-18cb7a6344348040bbe2.json",
+					"name" : "appmouseless_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appmouseless_copy_qml::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appmouseless_copy_qml-Debug-90d9ec78df7ec32b603d.json",
+					"name" : "appmouseless_copy_qml",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appmouseless_copy_res::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appmouseless_copy_res-Debug-78fb6fddd6beb366ca13.json",
+					"name" : "appmouseless_copy_res",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appmouseless_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appmouseless_qmlimportscan-Debug-2d5ccc717db823a8d3b4.json",
+					"name" : "appmouseless_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appmouseless_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appmouseless_qmllint-Debug-35c5c8f124029ec8fdf7.json",
+					"name" : "appmouseless_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appmouseless_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appmouseless_qmllint_json-Debug-63f193efcfa8b003e498.json",
+					"name" : "appmouseless_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appmouseless_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appmouseless_qmllint_module-Debug-0d426c3240bc08d19371.json",
+					"name" : "appmouseless_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appmouseless_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appmouseless_qmltyperegistration-Debug-33bb92a65e9415c585a3.json",
+					"name" : "appmouseless_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module_appmouseless_aotstats_target::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module_appmouseless_aotstats_target-Debug-3abf9f328f48edbb884f.json",
+					"name" : "module_appmouseless_aotstats_target",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/anujs/mouseless/build/Desktop-Debug",
+		"source" : "/home/anujs/mouseless"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

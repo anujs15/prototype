@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="images/right.png">/home/anujs/mouseless/images/right.png</file>
+    <file alias="images/wrong.png">/home/anujs/mouseless/images/wrong.png</file>
+  </qresource>
+</RCC>
+

@@ -1,0 +1,5 @@
+--resource
+/home/anujs/mouseless/build/Desktop-Debug/.qt/rcc/qmake_mouseless.qrc
+--resource
+/home/anujs/mouseless/build/Desktop-Debug/.qt/rcc/appmouseless_raw_qml_0.qrc
+/qt/qml/mouseless/Main.qml

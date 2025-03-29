@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/mouseless">
+    <file alias="qmldir">/home/anujs/mouseless/build/Desktop-Debug/mouseless/qmldir</file>
+  </qresource>
+</RCC>
+

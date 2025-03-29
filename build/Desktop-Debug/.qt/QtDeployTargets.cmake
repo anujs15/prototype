@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_appmouseless_FILE /home/anujs/mouseless/build/Desktop-Debug/appmouseless)
+set(__QT_DEPLOY_TARGET_appmouseless_TYPE EXECUTABLE)

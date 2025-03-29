@@ -1,0 +1,5 @@
+module mouseless
+typeinfo appmouseless.qmltypes
+prefer :/qt/qml/mouseless/
+Main 1.0 Main.qml
+

@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/qt/qml/mouseless">/home/anujs/mouseless/build/Desktop-Debug/mouseless</file>
+
+  </qresource>
+</RCC>

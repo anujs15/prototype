@@ -1,0 +1,14 @@
+-rootPath
+/home/anujs/mouseless
+-cmake-output
+-output-file
+/home/anujs/mouseless/build/Desktop-Debug/.qt/qml_imports/appmouseless_conf.cmake
+-importPath
+/home/anujs/mouseless/build/Desktop-Debug/mouseless
+-importPath
+/home/anujs/mouseless/build/Desktop-Debug
+-importPath
+/usr/lib/qt6/qml
+-qrcFiles
+/home/anujs/mouseless/build/Desktop-Debug/.qt/rcc/qmake_mouseless.qrc
+/home/anujs/mouseless/build/Desktop-Debug/.qt/rcc/appmouseless_raw_qml_0.qrc
