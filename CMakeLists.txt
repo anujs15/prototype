@@ -17,7 +17,16 @@ qt_add_qml_module(appmouseless
     VERSION 1.0
     QML_FILES
         Main.qml
+        RESOURCES
+        RESOURCES Resource.qrc
+        QML_FILES playground.qml
 )
+
+qt_add_resources( appmouseless "Resource"
+    PREFIX "/"
+    FILES  ../../Documents/images/git.png ../../Documents/images/vim.png ../../Documents/images/vscode.png ../../Documents/images/webflow.png ../../Documents/images/figma.png
+)
+
 
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
