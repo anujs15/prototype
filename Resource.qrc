@@ -1,9 +1,9 @@
 <RCC>
     <qresource prefix="/Icon"/>
     <qresource prefix="/">
-        <file>../../Documents/images/git.png</file>
         <file>../../Documents/images/vim.png</file>
         <file>../../Documents/images/vscode.png</file>
         <file>../../Documents/images/webflow.png</file>
+        <file>../../Documents/images/figma.png</file>
     </qresource>
 </RCC>

@@ -14,17 +14,21 @@ qt_add_executable(appmouseless
 
 qt_add_qml_module(appmouseless
     URI mouseless
-    VERSION 1.0
-    QML_FILES
-        Main.qml
-        RESOURCES
-        RESOURCES Resource.qrc
-        QML_FILES playground.qml
+        VERSION 1.0
+        QML_FILES
+            Main.qml
+            RESOURCES
+            RESOURCES Resource.qrc
+            QML_FILES playground.qml
+            QML_FILES Store.qml
+            QML_FILES dataset.js
+            RESOURCES qmldir
 )
+
 
 qt_add_resources( appmouseless "Resource"
     PREFIX "/"
-    FILES  ../../Documents/images/git.png ../../Documents/images/vim.png ../../Documents/images/vscode.png ../../Documents/images/webflow.png ../../Documents/images/figma.png
+    FILES  ../../Documents/images/figma.png ../../Documents/images/vim.png ../../Documents/images/vscode.png ../../Documents/images/webflow.png ../../Documents/images/figma.png
 )
 
 
